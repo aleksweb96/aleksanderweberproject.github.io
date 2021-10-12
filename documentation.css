@@ -1,0 +1,24 @@
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.documentation {
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+div.documentation {
+    text-align: initial;
+    max-width: 1000;
+}
+
+  .documentation-div {
+      padding: 20;
+  }
+
+  iframe.video {
+    align-content: center;
+    border: 1px solid;
+  }
