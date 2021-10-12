@@ -1,0 +1,191 @@
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>1854 Broad Street cholera outbreak - Documentation</title>
+    <link rel="stylesheet" href="./documentation.css">
+
+    
+</head>
+<body class="documentation">
+    <div class="documentation">
+        <h1>Documentation</h1>
+
+        <!--"https://www.youtube.com/embed/yxS0U-fpuTw"-->
+        <iframe class="video" width="672" height="378" src="./projectdocumentationvideo.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        <h2>Design Process:</h2>
+        <p>The following design iterations were made as more data was analyzed.</p>
+        <h3>Design 1</h3>
+        <p><img src="./Sketch1.JPG" width="640" height="445" /></p>
+        <p>
+            My first sketch invovled the idea of using both an interactive line graph and a bar graph. However, I ran across coding issues and time constraints that led me to drop the use of a bar graph. My intial idea of using sliders remained in future sketches.
+        </p>
+        <p></p>
+        <p>&nbsp;</p>
+        <h3>Design 2:</h3>
+        <p><img src="./Sketch2.JPG" width="640" height="445" /></p>
+        <p>
+            For my next sketch I thought of using a pie chart concept instead of the bar chart. My belief was that it would be simpler than the bar chart and more time manageable. The pie chart was dropped as I felt it was a redundant visualization of Males and Females used in the map and line chart.
+        </p>
+        <h3>Design 3:</h3>
+        <p><img src="./Sketch3.JPG" width="640" height="445" /></p>
+        <p>
+            This was my last sketch and the most similar to my final design. I had it stripped down to the essential visulaizations necessary to display the data. I would have been able to add more if time permitted and less coding errors. The documentation tab was shrunken down as I thought that the original button was too large and clunky.
+        </p>
+        
+        </p>
+        <p></p>
+        <h2>Final Design</h2>
+        <p></p>
+        <p><span>The final design has been divided into three sections:</span></p>
+
+        <p>
+            <img src="./fullMapAndLineChart.JPG" width="640" height="445" />
+        </p>
+
+        <ol>
+            <li>
+                <span>Map</span>
+                <p>
+                    <img src="./streetsOnlyDisplay.JPG" width="640" height="445" />
+                </p>
+                <ul>
+                    <li>
+                        The map shows the initial drawing of the line segments to create the streets display.
+                    </li>
+                </ul>
+                <p>
+                    <img src="./pumpsOnlyDisplay.JPG" width="640" height="445" />
+                </p>
+                <ul>
+                    <li>
+                        The map shows the location of pumps marked by&nbsp;
+                        <span style="background-color: #000000; color: #ffffff;">this</span> color.&nbsp;
+
+                    </li>
+                </ul>
+                <p>
+                    <img src="./mapWithDeathPoints.JPG" width="640" height="445" />
+                </p>
+                <ul>
+                    <li>
+                        The map shows the location of all deaths marked the associated sex of the victim.
+                    Colors representing sex are
+                    <em>darkgreen</em> for the
+                    <span style="background-color: #006400; color: #ffffff;"> Male </span>&nbsp;</span>
+                    and
+                    <em>darkorange </em> for the
+                    <span style="background-color: #ff8c00; color: #ffffff;"> Female </span>;
+
+                    these colors were selected based on contrast and from a color-blind friendly palette.
+                    </li>
+                    <li>
+                    The markers representing the location of deaths are interactive using the various sliders.
+                    </li>
+                    <li>
+                    The different age ranges are 1 to 10, 11 to 20, 21-40, 41-60, and 60-80.
+                    </li>
+                    <li>
+                        The different age ranges can be hidden or shown using their associated slider control.
+                        <p>
+                            <img src="./singleSelectedAgeRange.JPG" width="640" height="445" />
+                        </p>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <span>Line Chart</span>
+                <p>
+                    <img src="./lineChartDisplay.JPG" width="640" height="445" />
+                </p>
+                <ul>
+                    <li>
+                        <span>
+                            The line chart shows the deaths over time. Hovering over a specific point shows the date and number of deaths on that day. Clicking on the points changes the dots shown on the map to represent those of that particular point.  Additionally, the color of the dots can be changed to the users needs.
+                        </span>
+                    </li>
+                </ul>
+                <p>
+                    <img src="./multiSelectedDeathDates.JPG" width="640" height="445" />
+                </p>
+                <ul>
+                    <li>
+                        By clicking on the various death dates, the associated death points on the map are displayed.
+
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <span>Documentation </span>
+                <p>
+                    <img src="./documentationLink.JPG" width="640" height="145" />
+                </p>
+                <ul>
+                    <li><span>This section contains a link to the documentation page.</span></li>
+                </ul>
+            </li>
+        </ol>
+        <h2><span>Insights</span></h2>
+        <p></p>
+        <p>
+            My first insight was that the majority of deaths were both the very young and very old. This can be seen when sliding the age filters on the map visualization. My assumptions is that these groups died due to immune systems that have not matured and weakened immune systems due to advanced age.
+        </p>
+        <p></p>
+        <p>
+            I also noticed the extreme spike starting at the very end of August and spiking on September 2nd. The line chart visualization demonstrates the days when the water was highly contaminated and at its most lethal.
+        </p>
+        <p></p>
+        <p>
+            I also noted how the majority of overall deaths were extremely clustered and that there were only a few outlier deaths on the outskirts of town. This makes me wonder if the population density could have increased the risk of both infections and deaths. As the maps shows, there could be a case made about city layouts that prevent clusters of citizens in one area and the importance of spreading people out to slow down community spread.
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <!--
+        <p>
+            <img src="./maleColorChange.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./maleColorChange.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./pumpColorChange.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./dataColorChange.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./selectedDeathDate.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./noSelectedAgeRanges.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./maleOnlySelectedColor.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./femalePartiallySelectedColor.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./noDataColorLineChart.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./pumpPartiallySelectedColor.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./lineChartMouseOver.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./lineChartEdgeAdjustedMouseOver.JPG" width="640" height="445" />
+        </p>
+        <p>
+            <img src="./lineChartEdgeSelectedDeathDates.JPG" width="640" height="445" />
+        </p>
+        -->
+
+    </div>
+</body>
+</html>
