@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>1854 Broad Street cholera outbreak</title>
+    <link rel="stylesheet" href="./streetmap21.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	
+	<script type="text/javascript">
+	// http://127.0.0.1:8887/aleksproject/streetmap21.html
+	</script>
+</head>
+<body>
+	<script type="text/javascript" src="streetmap21.js"></script>
+
+
+
+
+	<div class="controls">
+		<div class="controls-left">
+			<p>
+			
+			Male Color: &nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="maleColor" type="color" class="" value="#000000" runat="server" />
+			<input id="maleOpacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			Female Color: &nbsp;
+			<input id="femaleColor" type="color" class="" value="#000000" runat="server" />
+			<input id="femaleOpacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			Pump Color: &nbsp;&nbsp;&nbsp;
+			<input id="pumpColor" type="color" class="" value="#000000" runat="server" />
+			<input id="pumpOpacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			Data Color: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="ptColor" type="color" class="" value="#000000" runat="server" />
+			<input id="ptOpacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+<!-- 			
+			Scale:&nbsp;&nbsp;
+			<input id="mapScale" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+ -->			
+			</p>
+		</div>
+		<div class="controls-right">
+			<p>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			age&nbsp;0-10&nbsp;
+			<input id="age0Opacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;11-20&nbsp;&nbsp;
+			<input id="age1Opacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;21-40&nbsp;&nbsp;
+			<input id="age2Opacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;41-60&nbsp;&nbsp;
+			<input id="age3Opacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;61-80&nbsp;&nbsp;
+			<input id="age4Opacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;80&nbsp;&nbsp;&nbsp;&nbsp;
+			<input id="age5Opacity" type="range" min="0.0" max="1.0" step="0.01" value="1.0" />
+			</br>
+			</p>
+		</div>
+	</div>
+
+	<div class="svg-container">
+	</div>
+
+</div>
+
+
+</body>
+</html>
