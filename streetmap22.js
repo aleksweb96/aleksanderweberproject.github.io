@@ -118,6 +118,7 @@
 			: controlValueOrDefault(ctrlId, "1.0");
 		return Number(opacityCtrlVal);
 	}
+
 	function getSexOpacityControlValueFromCircle(deathCircle, defaultValue) {
 		var thisSex = getCircleSexValue(deathCircle);
 		var sexOpacity = thisSex == 0 
@@ -1097,15 +1098,15 @@
 		$('#femaleColor').val(FEMALE_COLOR); // darkorange
 		$('#ptColor').val(CHART_POINT_COLOR); // purple
 
-		setChangeHandler('#pumpColor', '.pump', ['stroke', 'color', 'fill'], PUMP_COLOR);
-		setChangeHandler('#maleColor', '.male', ['stroke', 'fill'], MALE_COLOR);
-		setChangeHandler('#femaleColor', '.female', ['stroke', 'fill'], FEMALE_COLOR);
-		setChangeHandler('#ptColor', '.pt', ['stroke', 'fill' ], CHART_POINT_COLOR);
+		setChangeHandler('#pumpColor',     '.pump',   ['stroke', 'color', 'fill'], PUMP_COLOR);
+		setChangeHandler('#maleColor',     '.male',   ['stroke', 'fill'], MALE_COLOR);
+		setChangeHandler('#femaleColor',   '.female', ['stroke', 'fill'], FEMALE_COLOR);
+		setChangeHandler('#ptColor',       '.pt',     ['stroke', 'fill' ], CHART_POINT_COLOR);
 
-		setChangeHandler('#pumpOpacity', '.pump', 'opacity', '1.0');
-		setChangeHandler('#maleOpacity', '.male', 'opacity', '1.0');
+		setChangeHandler('#pumpOpacity',   '.pump',   'opacity', '1.0');
+		setChangeHandler('#maleOpacity',   '.male',   'opacity', '1.0');
 		setChangeHandler('#femaleOpacity', '.female', 'opacity', '1.0');
-		setChangeHandler('#ptOpacity', '.pt', 'opacity', '1.0');
+		setChangeHandler('#ptOpacity',     '.pt',     'opacity', '1.0');
 
 		// set Age Group Handlers and initial values
 		for (var ageGroup = 0; ageGroup <= MAX_AGE_GROUP; ageGroup++) 
